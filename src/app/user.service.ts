@@ -20,4 +20,8 @@ export class UserService {
 
    }
 
+   updatePhone(phoneNumber: number){
+   }
+   
+
 }

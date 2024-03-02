@@ -13,7 +13,11 @@ export class PhoneNumberComponent implements OnInit {
   ngOnInit(): void {
   }
 
+<<<<<<< HEAD
   submitSliderValue(){
     
+=======
+  onSubmit(){
+>>>>>>> 6755351774402f940e236515530281cdd9f7af5d
   }
 }
