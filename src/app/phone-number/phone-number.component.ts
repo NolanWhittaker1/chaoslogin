@@ -13,7 +13,6 @@ export class PhoneNumberComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(phonenumber: string){
-    
+  onSubmit(){
   }
 }
