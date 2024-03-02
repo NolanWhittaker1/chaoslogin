@@ -9,6 +9,8 @@ import { PhoneNumberComponent } from './phone-number/phone-number.component';
 import { PasswordpageComponent } from './passwordpage/passwordpage.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HumanverifComponent } from './humanverif/humanverif.component';
+import { DurationFormatPipe } from './duration-format.pipe';
+
 
 
 @NgModule({
@@ -17,7 +19,8 @@ import { HumanverifComponent } from './humanverif/humanverif.component';
     MainpageComponent,
     PhoneNumberComponent,
     PasswordpageComponent,
-    HumanverifComponent
+    HumanverifComponent,
+    DurationFormatPipe
   ],
   imports: [
     BrowserModule,

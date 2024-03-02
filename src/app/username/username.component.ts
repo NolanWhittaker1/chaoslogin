@@ -14,12 +14,7 @@ export class UsernameComponent {
   constructor(private userService: UserService, private router:Router){}
 
   onSubmit(username: string){
-    const newUser: user = {
-      id: username,
-      username: username,
-      password: '',
-      phonenumber: 0
-    };
+    const newUser = new user(username, '', 0)
     this.userService.add(newUser);
     this.router.navigate(["/password"])
   }

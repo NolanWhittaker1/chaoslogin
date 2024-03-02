@@ -16,40 +16,58 @@ export class PasswordpageComponent implements OnInit {
   constructor(private router:Router) {
     this.prompts = [
       {
-        question: "What's today's Wordle answer?",
-        answer: "Urban",
+        question: "Add today's Wordle answer?",
+        answer: "urban",
         answered: "red"
       },
       {
-        question: "What's year was Faker's first worlds win?",
+        question: "Add the year of Faker's first worlds win?",
         answer: "2013",
         answered: "red"
       },
       {
-        question: "What's a 4-letter country starting with P?",
-        answer: "Peru",
+        question: "Add a 4-letter country starting with P?",
+        answer: "peru",
         answered: "red"
       },
       {
-        question: "Solve this riddle: Whats on time but never arrives?",
-        answer: "Tomorrow",
+        question: "Add the solution to this riddle: Whats on time but never arrives?",
+        answer: "tomorrow",
         answered: "red"
       },
       {
-        question: "Solve this Equation: 4 + 3*(4-3)/3?",
+        question: "Add the solution to this Equation: 4 + 3*(4-3)/3?",
         answer: "5",
         answered: "red"
       }
     ];
     this.shuffleArray(this.prompts);
     this.currentPrompts.push(...this.prompts.slice(0,1));
+    this.currentPrompts[0] = {
+      question: "Please make it above 5 characters!",
+      answer: "5",
+      answered: "red"
+    }
    }
 
    ngOnInit(): void {
     this.passwordControl.valueChanges.pipe(debounceTime(500)).subscribe((value) => {
         this.finalizedPrompts = [];
-        for(let i = 0; i < this.currentPrompts.length; i++) {
-          if(value.includes(this.currentPrompts[i].answer)) {
+        this.finalizedPrompts.push({
+          question: "Please make it above 5 characters!",
+          answer: "5",
+          answered: "red"
+        });
+        if(value.length > 4) {
+          this.finalizedPrompts[0].answered = "green";
+        } else {
+          this.finalizedPrompts[0].answered = "red";
+        }
+
+        console.log(value.length)
+
+        for(let i = 1; i < this.currentPrompts.length; i++) {
+          if(value.toLowerCase().includes(this.currentPrompts[i].answer)) {
             console.log("Value includes: " + this.currentPrompts[i].answer)
             this.currentPrompts[i].answered = "green";
             this.finalizedPrompts.push(this.currentPrompts[i])
@@ -57,8 +75,8 @@ export class PasswordpageComponent implements OnInit {
           }
         }
 
-        for(let i = 0; i < this.prompts.length; i++) {
-          if(!value.includes(this.prompts[i].answer)) {
+        for(let i = 1; i < this.prompts.length; i++) {
+          if(!value.toLowerCase().includes(this.prompts[i].answer)) {
               console.log("Broke at: " + this.prompts[i].answer)
               this.currentPrompts.push(this.prompts[i])
               this.currentPrompts[i].answered = "red";

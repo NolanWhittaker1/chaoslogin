@@ -1,8 +1,11 @@
+import { Time } from "@angular/common";
+
 export class user {
     id: string;
     username: string;
     password: string;
     phonenumber: number;
+    timer: Date;
 
     constructor(username:string, password:string, phonenumber:number) {
         let temp = '';
@@ -16,6 +19,7 @@ export class user {
         this.username = username;
         this.password = password;
         this.phonenumber = phonenumber;
+        this.timer = new Date();
     }
 
 }
