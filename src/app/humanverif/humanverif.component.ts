@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Route, Router } from '@angular/router';
 @Component({
   selector: 'app-humanverif',
   templateUrl: './humanverif.component.html',
@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HumanverifComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
   nextPage() {
-    
+    this.router.navigate(["/time-bomb"]);
   }
 }

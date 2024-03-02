@@ -1,0 +1,13 @@
+.container{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#timer{
+    margin-bottom: 20px;
+}
+
+#countdown{
+    font-weight: bold;
+    color: red;
+}
