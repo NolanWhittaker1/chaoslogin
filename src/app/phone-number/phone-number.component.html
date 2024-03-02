@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <title>Phone Number</title>
-        <link rel="stylesheet" type="text/css" href="phone-number.component.css">
-        <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-        crossorigin="anonymous"
-      />
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Phone Number</title>
+    <link rel="stylesheet" type="text/css" href="phone-number.component.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="slider-container">
-            <p class="title">Please Enter Your Phone Number</p>
-            <input type="range" min="0" max="9999999999" value="0" class="slider" id="mySlider">
-            <p>Phone Number: <span id="sliderValue"></span></p>
-            <button class="btn btn-secondary btn-lg" (click)="submitSliderValue()">Submit</button>
-        </div>
-        </div>
+      <div class="slider-container">
+        <p class="title">Please Enter Your Phone Number</p>
+        <input
+          type="range"
+          min="0"
+          max="9999999999"
+          value="0"
+          class="slider"
+          id="mySlider"
+        />
+        <p>Phone Number: <span id="sliderValue"></span></p>
+        <button class="btn btn-secondary btn-lg" (click)="submitSliderValue()">
+          Submit
+        </button>
+      </div>
+    </div>
 
-        <script>
-            var slider =document.getElementById("mySlider");
-            var output = document.getElementById("sliderValue");
-            output.innerHTML = slider.value;
+    <script>
+      var slider = document.getElementById("mySlider");
+      var output = document.getElementById("sliderValue");
+      output.innerHTML = slider.value;
 
-            slider.oninput = function(){
-                output.innerHTML = this.value;
-            }
-        </script>
-    </body>
+      slider.oninput = function () {
+        output.innerHTML = this.value;
+      };
+    </script>
+  </body>
 </html>
