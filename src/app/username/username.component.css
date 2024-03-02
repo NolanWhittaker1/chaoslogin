@@ -1,0 +1,30 @@
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+    
+}
+
+form{
+    text-align: center;
+}
+
+label{
+    font-family: 'Times New Roman', Times, serif; /* put font here :3 */
+    font-size: 40px; 
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"]{
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    display: block;
+    margin-top: 10px;
+    padding:10px 20px;
+}
