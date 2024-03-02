@@ -17,4 +17,5 @@ export class user {
         this.password = password;
         this.phonenumber = phonenumber;
     }
+
 }

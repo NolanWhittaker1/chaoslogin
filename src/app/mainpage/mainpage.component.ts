@@ -14,7 +14,7 @@ export class MainpageComponent implements OnInit {
   }
 
   nextPage() {
-    this.router.navigate(["/password"])
+    this.router.navigate(["/username"])
   }
 
 }
