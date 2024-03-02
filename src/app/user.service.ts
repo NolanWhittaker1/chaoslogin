@@ -22,6 +22,14 @@ export class UserService {
    updatePhone(phoneNumber: number){
       this.users[this.users.length-1].phonenumber = phoneNumber;
    }
+
+   getTime() {
+      const currentTime = new Date().getTime();
+      const lastUserTimer = this.users[this.users.length - 1].timer.getTime();
+      const timeDifferenceInMillis = currentTime - lastUserTimer;
+    
+      return timeDifferenceInMillis;
+    }
    
 
 }

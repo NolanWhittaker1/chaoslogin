@@ -9,6 +9,8 @@ import { PhoneNumberComponent } from './phone-number/phone-number.component';
 import { PasswordpageComponent } from './passwordpage/passwordpage.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HumanverifComponent } from './humanverif/humanverif.component';
+import { DurationFormatPipe } from './duration-format.pipe';
+
 import { TimeBombComponent } from './time-bomb/time-bomb.component';
 
 
@@ -18,6 +20,8 @@ import { TimeBombComponent } from './time-bomb/time-bomb.component';
     MainpageComponent,
     PhoneNumberComponent,
     PasswordpageComponent,
+    HumanverifComponent,
+    DurationFormatPipe
     HumanverifComponent,
     TimeBombComponent
   ],
