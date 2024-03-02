@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CheckboxRequiredValidator, FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 import { debounceTime } from 'rxjs/operators';
 import { __values } from 'tslib';
 @Component({
@@ -12,7 +13,7 @@ export class PasswordpageComponent implements OnInit {
   currentPrompts: any[] = [];
   finalizedPrompts: any[] = [];
   passwordControl = new FormControl();
-  constructor() {
+  constructor(private router:Router) {
     this.prompts = [
       {
         question: "What's today's Wordle answer?",
@@ -80,5 +81,7 @@ export class PasswordpageComponent implements OnInit {
     }
   }
   
-
+  nextPage() {
+    this.router.navigate(["/phonenumber"])
+  }
 }

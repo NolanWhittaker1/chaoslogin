@@ -8,6 +8,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { PhoneNumberComponent } from './phone-number/phone-number.component';
 import { PasswordpageComponent } from './passwordpage/passwordpage.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HumanverifComponent } from './humanverif/humanverif.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     MainpageComponent,
     PhoneNumberComponent,
-    PasswordpageComponent
+    PasswordpageComponent,
+    HumanverifComponent
   ],
   imports: [
     BrowserModule,

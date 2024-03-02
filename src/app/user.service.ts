@@ -17,10 +17,10 @@ export class UserService {
 
    add(newUser: user){
     this.users.push(newUser);
-
    }
 
    updatePhone(phoneNumber: number){
+      this.users[this.users.length-1].phonenumber = phoneNumber;
    }
    
 
