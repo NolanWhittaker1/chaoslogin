@@ -9,16 +9,16 @@ import { Route, Router } from '@angular/router';
 })
 export class HumanverifComponent implements OnInit {
   totalTime: number;
-  constructor(private us:UserService) {
+  constructor(private us:UserService, private router:Router) {
       this.totalTime = us.getTime(); 
    }
 
-  constructor(private router: Router) { }
+ 
 
   ngOnInit(): void {
   }
 
   nextPage() {
-    this.router.navigate(["/time-bomb"]);
+    this.router.navigate(['/bomb']);
   }
 }

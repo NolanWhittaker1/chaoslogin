@@ -3,11 +3,40 @@
     margin-top: 100px;
 }
 
+.container2{
+    text-align: left;
+    margin-top: 100px;
+}
+
 #timer{
     margin-bottom: 20px;
+    color: red;
+    font-weight: bold;
 }
 
 #countdown{
     font-weight: bold;
-    color: red;
+}
+
+#diffusebtn{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+diffusebtn:hover, #diffusebtn:hover ~ button{
+    opacity: 1;
+}
+
+
+#diffusebtn1{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+diffusebtn1:hover, #diffusebtn1:hover ~ button{
+    opacity: 1;
+}
+
+img{
+    width: 20vw;
 }

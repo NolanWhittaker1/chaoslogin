@@ -21,7 +21,7 @@ import { TimeBombComponent } from './time-bomb/time-bomb.component';
     PhoneNumberComponent,
     PasswordpageComponent,
     HumanverifComponent,
-    DurationFormatPipe
+    DurationFormatPipe,
     HumanverifComponent,
     TimeBombComponent
   ],
