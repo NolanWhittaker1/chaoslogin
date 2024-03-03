@@ -40,3 +40,8 @@ diffusebtn1:hover, #diffusebtn1:hover ~ button{
 img{
     width: 20vw;
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+}

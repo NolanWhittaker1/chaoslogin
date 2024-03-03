@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import {Router } from '@angular/router';
+import { interval, take } from 'rxjs';
 
 @Component({
   selector: 'app-time-bomb',
@@ -19,6 +20,7 @@ export class TimeBombComponent implements OnInit {
 
   ngOnInit(): void {
     this.startTimer();
+    
   }
 
   startTimer(): void{
@@ -83,4 +85,5 @@ export class TimeBombComponent implements OnInit {
       this.newAudioPlayerRef.nativeElement.play();
     }
   }
+
 }

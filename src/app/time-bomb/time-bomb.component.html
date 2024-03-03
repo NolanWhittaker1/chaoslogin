@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BOMB DIFFUSE</title>
-        <link rel="stylesheet" href="time-bomb.component.css">
-    </head>
-    <body>
-        <div class="container">
-            <h1>FIND THE BOMB!</h1>
-            <div id="timer">Time Left: <span>{{ timerDisplay }}</span></div>
-            <button id="diffusebtn1" (mouseenter)="showButton1()" (mouseleave)="hideButton1()">Not This one<img src="assets/images (1).jpeg"> </button>
-            
-            <button *ngIf="bombDiffused" (click)="goToNextPage()">Next</button>
-        </div>
-        <div class="container2">
-        <button id="diffusebtn" (click)="diffuseBomb()" (mouseenter)="showButton()" (mouseleave)="hideButton()"><img src="assets/valorant-spike-planted-in-game.webp"></button>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOMB DIFFUSE</title>
+    <link rel="stylesheet" href="time-bomb.component.css" />
+  </head>
+  <body id="contain">
+    <div class="container">
+      <h1>FIND THE BOMB!</h1>
+      <div id="timer">
+        Time Left: <span>{{ timerDisplay }}</span>
+      </div>
+      <button
+        id="diffusebtn1"
+        (mouseenter)="showButton1()"
+        (mouseleave)="hideButton1()"
+      >
+        Not This one<img src="assets/images (1).jpeg" />
+      </button>
 
-    <audio #audioPlayer src="assets/Spike Sounds - From Plant To Detonation  Valorant.mp3" autoplay></audio>
-    <audio #newAudioPlayer src="assets/VALORANT FAKE DEFUSE - SOUND EFFECT.mp3"></audio>
-    </body>
+      <button *ngIf="bombDiffused" (click)="goToNextPage()">Next</button>
+    </div>
+    <div class="container2">
+      <button
+        id="diffusebtn"
+        (click)="diffuseBomb()"
+        (mouseenter)="showButton()"
+        (mouseleave)="hideButton()"
+      >
+        <img src="assets/valorant-spike-planted-in-game.webp" />
+      </button>
+    </div>
+
+    <audio
+      #audioPlayer
+      src="assets/Spike Sounds - From Plant To Detonation  Valorant.mp3"
+      autoplay
+    ></audio>
+    <audio
+      #newAudioPlayer
+      src="assets/VALORANT FAKE DEFUSE - SOUND EFFECT.mp3"
+    ></audio>
+  </body>
 </html>
