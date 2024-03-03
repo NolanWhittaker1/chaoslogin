@@ -12,6 +12,8 @@ import { HumanverifComponent } from './humanverif/humanverif.component';
 import { DurationFormatPipe } from './duration-format.pipe';
 
 import { TimeBombComponent } from './time-bomb/time-bomb.component';
+import { EndScreenComponent } from './end-screen/end-screen.component';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { TimeBombComponent } from './time-bomb/time-bomb.component';
     HumanverifComponent,
     DurationFormatPipe,
     HumanverifComponent,
-    TimeBombComponent
+    TimeBombComponent,
+    EndScreenComponent,
+    LeaderboardComponent
   ],
   imports: [
     BrowserModule,
