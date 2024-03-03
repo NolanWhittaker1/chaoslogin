@@ -10,6 +10,9 @@ import { PasswordpageComponent } from './passwordpage/passwordpage.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HumanverifComponent } from './humanverif/humanverif.component';
 import { TimeBombComponent } from './time-bomb/time-bomb.component';
+import { BopitpageComponent } from './bopitpage/bopitpage.component';
+import { ResultspageComponent } from './resultspage/resultspage.component';
+
 
 
 @NgModule({
@@ -19,7 +22,9 @@ import { TimeBombComponent } from './time-bomb/time-bomb.component';
     PhoneNumberComponent,
     PasswordpageComponent,
     HumanverifComponent,
-    TimeBombComponent
+    TimeBombComponent,
+    BopitpageComponent,
+    ResultspageComponent
   ],
   imports: [
     BrowserModule,
