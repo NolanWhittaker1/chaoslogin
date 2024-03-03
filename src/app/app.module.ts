@@ -12,6 +12,9 @@ import { HumanverifComponent } from './humanverif/humanverif.component';
 import { DurationFormatPipe } from './duration-format.pipe';
 
 import { TimeBombComponent } from './time-bomb/time-bomb.component';
+import { BopitpageComponent } from './bopitpage/bopitpage.component';
+import { ResultspageComponent } from './resultspage/resultspage.component';
+
 
 
 @NgModule({

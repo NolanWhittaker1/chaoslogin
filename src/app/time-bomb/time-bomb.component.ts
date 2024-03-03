@@ -42,7 +42,7 @@ export class TimeBombComponent implements OnInit {
   }
 
   goToNextPage(): void{
-    this.router.navigate(['/'])
+    this.router.navigate(['/bopit'])
   }
 
   showButton(): void{
