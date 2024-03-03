@@ -15,8 +15,11 @@ export class BopitpageComponent implements OnInit {
   maxTurns = 10;
   count = 0;
   userGuess: string[] =[];
+  wrong: boolean;
   
-  constructor(private router:Router) { }
+  constructor(private router:Router) {
+    this.wrong = true;
+   }
 
   ngOnInit(): void {
       for (let i = 0; i < 10; i++) {
@@ -99,11 +102,16 @@ export class BopitpageComponent implements OnInit {
   onSubmit() {
     for(let i = 0; i < this.currentTurn; i++) {
       if(this.userGuess[i] != this.pattern[i]) {
-        alert("YOU LOST!");
-        this.router.navigate(['/'])
+        this.wrong = false;
       }
     }
-    alert("you won!")
+
+    if(this.wrong == false) {
+      alert("YOU LOST")
+      this.router.navigate(['/'])
+    } else {
+      this.router.navigate(['/end'])
+    }
   }
 
 

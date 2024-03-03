@@ -14,6 +14,7 @@ import { DurationFormatPipe } from './duration-format.pipe';
 import { TimeBombComponent } from './time-bomb/time-bomb.component';
 import { BopitpageComponent } from './bopitpage/bopitpage.component';
 import { ResultspageComponent } from './resultspage/resultspage.component';
+import { EndscreenComponent } from './endscreen/endscreen.component';
 
 
 
@@ -26,7 +27,8 @@ import { ResultspageComponent } from './resultspage/resultspage.component';
     HumanverifComponent,
     DurationFormatPipe,
     HumanverifComponent,
-    TimeBombComponent
+    TimeBombComponent,
+    EndscreenComponent
   ],
   imports: [
     BrowserModule,

@@ -12,7 +12,8 @@ export class UserService {
    }
 
    get() {
-    return this.users;
+      const name = this.users[this.users.length-1].username;
+    return name;
    }
 
    add(newUser: user){

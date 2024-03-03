@@ -7,6 +7,7 @@ import { UsernameComponent } from './username/username.component';
 import { HumanverifComponent } from './humanverif/humanverif.component';
 import { BopitpageComponent } from './bopitpage/bopitpage.component';
 import { TimeBombComponent } from './time-bomb/time-bomb.component';
+import { EndscreenComponent } from './endscreen/endscreen.component';
 
 const routes: Routes = [
   {path: '', component: MainpageComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path:'humanverif', component:HumanverifComponent},
   {path:'bopit', component:BopitpageComponent},
   {path:'humanverif', component:HumanverifComponent},
-  {path:'bomb', component:TimeBombComponent}
+  {path:'bomb', component:TimeBombComponent},
+  {path:'end', component:EndscreenComponent}
 ];
 
 @NgModule({
